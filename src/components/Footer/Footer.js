@@ -1,16 +1,20 @@
 import React from 'react'
+import { Box, Link } from '@chakra-ui/react'
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        marginTop: `2rem`,
-      }}
-    >
+    <Box as="footer" marginTop="2em">
       © {new Date().getFullYear()}, Built with
       {` `}
-      <a href="https://www.gatsbyjs.com">Gatsby</a>
-    </footer>
+      <Link
+        href="https://www.gatsbyjs.com"
+        textDecor="underline"
+        color="purple.500"
+        isExternal
+      >
+        Gatsby
+      </Link>
+    </Box>
   )
 }
 

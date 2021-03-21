@@ -8,11 +8,11 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import { Box } from '@chakra-ui/react'
 
-import { Header } from '@components'
-import { Footer } from '@components'
+import { Header, Footer } from '@components'
 
-import './styles.css'
+import './styles.scss'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,16 +28,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <Box
+        as="div"
+        m="0 auto"
+        maxWidth="960px"
+        padding="0 1.0875rem 1.45rem"
+        className="test"
       >
-        <main>{children}</main>
+        <Box as="main">{children}</Box>
         <Footer />
-      </div>
+      </Box>
     </>
   )
 }

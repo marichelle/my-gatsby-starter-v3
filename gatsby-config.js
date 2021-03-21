@@ -51,5 +51,7 @@ module.exports = {
         extensions: [],
       },
     },
+    `@chakra-ui/gatsby-plugin`,
+    `gatsby-plugin-sass`,
   ],
 }
