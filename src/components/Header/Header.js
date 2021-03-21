@@ -4,13 +4,13 @@ import { Link as GatsbyLink } from 'gatsby'
 import { Box, Heading, Link } from '@chakra-ui/react'
 
 const Header = ({ siteTitle }) => (
-  <Box as="header" background="rebeccapurple" marginBottom="1.45rem">
+  <Box as="header" background="primary" marginBottom="1.45rem">
     <Box as="div" m="0 auto" maxW="960px" p="1.45rem 1.0875rem">
       <Heading margin="0">
         <Link
           as={GatsbyLink}
           to="/"
-          color={'white'}
+          color="white"
           _hover={{ textDecor: `none` }}
         >
           {siteTitle}
