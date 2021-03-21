@@ -13,9 +13,9 @@ const IndexPage = () => (
       Welcome to your new Gatsby site.
     </Text>
     <Text fontSize="xl" my={5}>
-      Now go build something great.
+      Hover on me to make me go to the moon!
     </Text>
-    <Box as="div" maxWidth="300px" marginBottom="1.45rem">
+    <Box as="div" className="astronaut" maxWidth="300px" marginBottom="1.45rem">
       <StaticImage
         src="../images/gatsby-astronaut.png"
         alt="A Gatsby astronaut"

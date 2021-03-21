@@ -1,0 +1,8 @@
+.astronaut {
+  transition: transform 250ms, opacity 400ms;
+
+  &:hover {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
